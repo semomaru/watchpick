@@ -1,0 +1,425 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f5f7fb;
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+  background: #4f46e5;
+  color: white;
+}
+
+main {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+div > div {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.search-box input {
+  width: 300px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.result-card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.service-card {
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.best {
+  border: 2px solid gold;
+}
+
+.popular-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  width: 180px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  margin-top: 10px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 22px;
+}
+
+.about {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+
+.features div {
+  width: 220px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.service-logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.service-card {
+  transition: 0.2s;
+}
+
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.user-result {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+}
+
+.result-summary {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.user-result,
+.cheap-info {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+.user-result h3,
+.cheap-info h3 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+
+.user-result p,
+.cheap-info p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.result-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+
+.service-name {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+
+.user-result p,
+.cheap-info p {
+  font-size: 18px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.no-cost {
+  color: rgb(156, 0, 143);
+  font-weight: bold;
+}
+
+.saving-title {
+  font-size: 24px;
+}
+
+
+.saving-month {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.saving-year {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* あなたの場合 */
+.user-result {
+  border: 6px solid #4caf50;
+}
+
+
+.cheapest-card {
+  display: block;
+
+  color: inherit;
+  text-decoration: none;
+
+  border: 6px solid orange;
+  padding: 20px;
+  border-radius: 16px;
+
+
+  transition: 0.3s;
+}
+
+.cheapest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* 節約 */
+.saving-card {
+  border: 6px solid #e91e63;
+}
+
+.best-card {
+  border: 6px solid #eeff00;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.visit-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 30px;
+  background: #1976d2;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+
+.visit-button:hover {
+  opacity: 0.8;
+}
+
+.search-box {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin: 25px 0;
+
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+
+.search-box input {
+  width: 70%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+
+.search-box button {
+  margin-left: 10px;
+  padding: 12px 25px;
+  border-radius: 20px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #222;
+  opacity: 1;
+}
+
+.hero h1,
+.hero p {
+  color: white;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-result-item small {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+
+.search-result-item span {
+  text-align: left;
+}
+
+.service-logo {
+  width:40px;
+  height:40px;
+  object-fit:contain;
+}
+
+.cheapest-logo {
+  width:60px;
+  height:60px;
+  object-fit:contain;
+}
+
+.my-service-item {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:10px;
+}
+
+
+.my-service-logo {
+  width:40px;
+  height:40px;
+  object-fit:contain;
+}
+
+/* ランキング上位3つ */
+.service-card.gold {
+  border: 3px solid #d4af37;
+  transform: scale(1.03);
+}
+
+.service-card.silver {
+  border: 3px solid #c0c0c0;
+}
+
+.service-card.bronze {
+  border: 3px solid #cd7f32;
+}
+
+
+/* 順位タイトル */
+.service-card.gold h2 {
+  color: #d4af37;
+}
+
+.service-card.silver h2 {
+  color: #888;
+}
+
+.service-card.bronze h2 {
+  color: #cd7f32;
+}
+
+
+/* 1位を少し目立たせる */
+.service-card.gold {
+  box-shadow: 0 8px 20px rgba(212,175,55,0.3);
+}
+
+
+/* 2位 */
+.service-card.silver {
+  box-shadow: 0 6px 15px rgba(192,192,192,0.3);
+}
+
+
+/* 3位 */
+.service-card.bronze {
+  box-shadow: 0 6px 15px rgba(205,127,50,0.3);
+}
