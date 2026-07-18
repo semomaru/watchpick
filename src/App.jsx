@@ -10,6 +10,7 @@ import {
   getWatchProviders
 } from "./api/tmdb";
 import services from './services'
+import { Analytics } from '@vercel/analytics/react'
 function App() {
 
   const [keyword, setKeyword] = useState('')
@@ -950,6 +951,8 @@ className={
   </div>
 
 </section>
+
+<Analytics />
 
 </div>
 )
