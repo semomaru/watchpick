@@ -288,38 +288,43 @@ const getRecommendation = () => {
   }
 
 
-  const currentService =
-    result.services.find(
-      service =>
-        myServices.some(
-          item =>
-            item.name === service.name
-        )
-    )
+const currentServices =
+  result.services.filter(
+    service =>
+      myServices.some(
+        item => item.name === service.name
+      )
+  )
 
 
   // 見られるサービスがない
 
-  if(!currentService){
+if(currentServices.length === 0){
 
-    return {
-      type:'none'
-    }
-
+  return {
+    type:'none'
   }
 
+}
 
   // すでに最安
 
-  if(
-    currentService.price === cheapestService.price
-  ){
+ const currentCheapest =
+  [...currentServices]
+    .sort(
+      (a,b)=>a.price-b.price
+    )[0]
 
-    return {
-      type:'best'
-    }
 
+if(
+  currentCheapest.price === cheapestService.price
+){
+
+  return {
+    type:'best'
   }
+
+}
 
 
   // 安くできる
@@ -328,9 +333,9 @@ const getRecommendation = () => {
 
     type:'save',
 
-    saving:
-      currentService.price -
-      cheapestService.price
+  saving:
+  currentCheapest.price -
+  cheapestService.price
 
   }
 
