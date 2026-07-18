@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://watchpick-beta.vercel.app/sitemap.xml
